@@ -1,0 +1,2 @@
+# ParametroOff
+Parametro GIST(off)
