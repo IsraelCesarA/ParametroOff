@@ -3,16 +3,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="./style.css"/>
-    <title>GEOPE - Cálculo de Parâmetros</title>
-    </head>
+    <title>GEOPE - Cálculo de Parâmetros (Modo Offline)</title>
+</head>
 <body>
     <div class="container">
         <header>
-            <div class="header-left"><img class="gist-logo" src="https://th.bing.com/th/id/OIP.WXt5gHtQWWCULzuSYExo-AHaBQ?w=311&h=61&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Sindionibus logo" /></div>
-            <div>
+            <div class="header-left">
+                <img class="gist-logo" src="https://th.bing.com/th/id/OIP.WXt5gHtQWWCULzuSYExo-AHaBQ?w=311&h=61&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Sindionibus logo" />
+            </div>
             <div class="header-text-container">
-            <h1 class="header-title">Gerência de Operações</h1>
-            <h2 class="header-subtitle">Cálculo de Parâmetros do GIST</h2>
+                <h1 class="header-title">Gerência de Operações</h1>
+                <h2 class="header-subtitle">Cálculo de Parâmetros do GIST (Redução 20%)</h2>
             </div>
         </header>
 
@@ -24,22 +25,24 @@
                 </div>
                 <div class="input-group">
                     <label for="tabela">TABELA:</label>
-                    <input type="text" id="tabela" />
+                    <input type="text" id="tabela" class="select-input" />
                 </div>
                 <div class="input-group">
                     <label for="hora-inicial">HORA INICIAL:</label>
-                    <input type="time" id="hora-inicial" />
+                    <input type="time" id="hora-inicial" class="select-input" />
                 </div>
                 <div class="input-group">
                     <label for="hora-final">HORA FINAL:</label>
-                    <input type="time" id="hora-final" readonly />
+                    <input type="time" id="hora-final" />
                 </div>
                 <div class="input-group">
                     <label>TEMPO DE VIAGEM:</label>
                     <span id="tempo-viagem">...</span> min.
                 </div>
-                <button id="calcular" class="calc-button">Calcular</button>
-                <button id="limpar" class="clear-button">Limpar</button>
+                <div class="button-group">
+                    <button id="calcular" class="calc-button">Calcular</button>
+                    <button id="limpar" class="clear-button">Limpar</button>
+                </div>
             </div>
 
             <div class="sections-grid">
@@ -98,8 +101,6 @@
                             </div>
                         </div>
                     </div>
-                    <img src="Atraso.png" alt="Atraso">
-
                 </div>
 
                 <div class="adiantamento-section">
@@ -142,12 +143,11 @@
                                 <input type="text" id="chegada-61-200-ad" readonly />
                             </div>
                         </div>
-                    </div>                    
-                    <img src="Adiantamento.png" alt="Adiantamento">
+                    </div>
                 </div>
-           
+            </div>
         </div>
     </div>
-    </body>
-    <script src="./script.js"></script>
-    </html>
+</body>
+<script src="./script.js"></script>
+</html>
