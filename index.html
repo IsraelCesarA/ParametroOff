@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="./style.css"/>
-    <title>GEOPE - Contingência Offline</title>
+    <title>GEOPE - Cálculo Manual (Offline)</title>
 </head>
 <body>
     <div class="container">
@@ -14,7 +14,7 @@
             
             <div class="header-text-container">
                 <h1 class="header-title">Gerência de Operações</h1>
-                <h2 class="header-subtitle">Cálculo de Parâmetros do GIST (Modo Offline)</h2>
+                <h2 class="header-subtitle">Cálculo de Parâmetros do GIST (Modo Manual)</h2>
             </div>
         </header>
 
@@ -26,20 +26,21 @@
                 </div>
                 <div class="input-group">
                     <label for="tabela">TABELA:</label>
-                    <input type="text" id="tabela" placeholder="Opcional" class="select-input" />
+                    <input type="text" id="tabela" placeholder="Opcional" />
                 </div>
+                
                 <div class="input-group">
                     <label for="hora-inicial">HORA INICIAL:</label>
-                    <input type="time" id="hora-inicial" class="select-input" required />
+                    <input type="time" id="hora-inicial" required />
                 </div>
                 <div class="input-group">
                     <label for="hora-final">HORA FINAL:</label>
-                    <input type="time" id="hora-final" class="select-input" required />
+                    <input type="time" id="hora-final" required />
                 </div>
                 
                 <div class="input-group">
                     <label>TEMPO DE VIAGEM:</label>
-                    <span id="tempo-viagem" style="font-weight:bold; color:#0C455A;">...</span> min.
+                    <span id="tempo-viagem" style="font-weight:bold; color:#0C455A; font-size:16px;">...</span> min.
                 </div>
                 <div class="button-group">
                     <button id="calcular" class="calc-button">Calcular</button>
@@ -229,5 +230,5 @@
         </div>
     </div>
 </body>
-<script src="./script-offline.js"></script>
+<script src="./script-manual.js"></script>
 </html>
