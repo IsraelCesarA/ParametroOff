@@ -144,3 +144,4 @@ limparButton.addEventListener('click', () => {
     clearInputFields();
     clearFields();
 });
+ 
